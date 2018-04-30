@@ -9,6 +9,10 @@ public class SpaceInvaders {
 		this.longueur = longueur;
 		this.hauteur = hauteur;
 	}
+	
+	public void positionnerUnNouveauVaisseau(int x, int y) {
+        Vaisseau vaisseau = new Vaisseau (x,y);
+	}
 
 	@Override
 	public String toString() {
