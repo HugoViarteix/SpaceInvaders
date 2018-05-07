@@ -21,7 +21,7 @@
 		    "...............\n" , spaceinvaders.toString());
 	        }
 	   
-		@Test
+	   @Test
 		public void test_unNouveauVaisseauEstCorrectementPositionneDansEspaceJeu() {
 			SpaceInvaders spaceinvaders = new SpaceInvaders(15, 10);
 			spaceinvaders.positionnerUnNouveauVaisseau(7,9);
