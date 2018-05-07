@@ -18,7 +18,7 @@
 		    "...............\n" + 
 		    "...............\n" + 
 		    "...............\n" + 
-		    "...............\n" , spaceinvaders.toString());
+		    "...............\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
 	        }
 	   
 	   @Test
@@ -35,7 +35,13 @@
 			"...............\n" + 
 			"...............\n" + 
 			"...............\n" + 
-			".......V.......\n" , spaceinvaders.toString());
+			".......V.......\n" , spaceinvaders.recupererEspaceJeuDansChaineASCII());
+		}
+	   
+	   @Test(expected = HorsEspaceJeuException.class)
+		public void test_unNouveauVaisseauEstPositionneHorsEspaceJeuTropADroite_UneExceptionEstLevee() throws Exception {
+			SpaceInvaders spaceinvaders = new SpaceInvaders(15, 10);
+			spaceinvaders.positionnerUnNouveauVaisseau(15,9);
 		}
 
        }
