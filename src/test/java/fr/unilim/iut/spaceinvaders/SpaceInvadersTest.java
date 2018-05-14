@@ -72,6 +72,5 @@ import fr.unilim.iut.spaceinvaders.utils.HorsEspaceJeuException;
 			} catch (final HorsEspaceJeuException e) {
 			}
 				
-		}
-
+	   	}
        }
