@@ -11,7 +11,7 @@ public class Vaisseau {
 
    public Vaisseau(int longueur, int hauteur, int x, int y) {
 	   this(new Dimension(longueur, hauteur), new Position(x, y));
-    }
+    } 
 
     public Vaisseau(Dimension dimension, Position positionOrigine) {
 	    this.dimension = dimension;
